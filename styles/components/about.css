@@ -102,6 +102,7 @@
 @media (min-width: 1024px){
     .about__divs{
         flex-direction: row;
+        gap: 1rem;
     }
 
     .about__title{
