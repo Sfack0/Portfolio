@@ -1,0 +1,135 @@
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about__divs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.about__info-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.about__p{
+    color: var(--clr-slate600);
+    font-size: var(--size-sm);
+    max-width: 50rem;
+}
+
+.about__technologies{
+    color: var(--clr-slate400);
+}
+
+.about__tech-list{
+    display: grid;
+    grid-template-rows: 2.6rem 2.6rem 2.6rem;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+
+.about__tech-list-element{
+    color: var(--clr-slate600);
+    min-width: 6.5rem;
+}
+
+.about__tech-list-element::before{
+    content:'\2713';
+    margin-right: 0.2rem;
+    color: rgb(0, 255, 0);;
+}
+
+
+.about__image{
+    width: 100%;
+}
+
+.about__image-div{
+    width: 100%;
+}
+
+
+
+/* xs */
+@media (min-width: 475px){
+
+} 
+
+/* sm */
+@media (min-width: 640px){
+    .about__image-div{
+        align-self: center;
+        max-width: 27rem;
+    }
+
+    .about__title{
+        font-size: var(--size-3xl);
+    }
+
+    .about__p{
+        font-size: var(--size-base);
+    }
+
+    .about__technologies{
+        font-size: var(--size-xl);
+    }
+
+    .about__tech-list-element{
+        font-size: var(--size-lg);
+    }
+}
+
+/* md */
+@media (min-width: 768px){
+    
+}
+
+/* lg */
+@media (min-width: 1024px){
+    .about__divs{
+        flex-direction: row;
+    }
+
+    .about__title{
+        font-size: var(--size-4xl);
+    }
+
+    .about__p{
+        font-size: var(--size-lg);
+    }
+
+    .about__technologies{
+        font-size: var(--size-2xl);
+    }
+
+    .about__tech-list-element{
+        font-size: var(--size-xl);
+    }
+
+}
+
+/* xl */
+@media (min-width: 1280px){
+    .about__info-div{
+        align-self: flex-start;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px){
+    
+}
