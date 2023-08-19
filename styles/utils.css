@@ -38,6 +38,11 @@
     color: var(--clr-light);
     padding: 0.5em 1em;
     border-radius: 6px;
+    transition: transform 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-0.15rem);
 }
 
 .container{
@@ -46,14 +51,12 @@
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border: 1px solid red;
 }
 
 .section{
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 5rem;
-    border: 1px solid pink;
     align-self: center;
 }
 
