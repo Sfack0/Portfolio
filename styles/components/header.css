@@ -14,6 +14,9 @@
     width: var(--size-2xl);
     height: var(--size-2xl);
     display: block;
+    position: relative;
+    margin-right: 0.5rem;
+    z-index: 100;
 }
 
 
@@ -49,12 +52,9 @@
 
     .header__resume{
         font-size: var(--size-xs);
-        transition: transform 0.3s;
     }
 
-    .header__resume:hover{
-        transform: translateY(-0.15rem);
-    }
+    
 
     .header__link{
         font-size: var(--size-xs);
@@ -81,6 +81,14 @@
     .header__bars{
         display: none;
     }
+
+    .header__mobile__menu{
+        display: none;
+    }
+
+    body{
+        overflow-y: auto;
+    }
 }
 
 
@@ -104,14 +112,3 @@
 
   
 }
-
-/* xl */
-@media (min-width: 1280px){
-    
-}
-
-/* 2xl */
-@media (min-width: 1536px){
-    
-}
-

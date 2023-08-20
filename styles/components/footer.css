@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: var(--size-sm);
+    font-weight: 100;
+    color: var(--clr-slate600);
+    letter-spacing: 0.15rem;
+    text-align: center;
+    user-select: none;
+}
+
+footer h6{
+    font-weight: 100;
+}

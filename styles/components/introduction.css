@@ -86,11 +86,6 @@
 
 /* xl */
 @media (min-width: 1280px){
-    .introduction__image{
-        width: var(--size-10xl);
-        height: var(--size-10xl);
-    }
-
     .introduction__greeting{
         font-size: var(--size-2xl);
     }
@@ -110,27 +105,4 @@
 }
 
 
-/* 2xl */
-@media (min-width: 1536px){
-    .introduction__image{
-        width: var(--size-10xl);
-        height: var(--size-10xl);
-    }
-
-    .introduction__greeting{
-        font-size: var(--size-3xl);
-    }
-
-    .introduction__job{
-        font-size: var(--size-8xl);
-    }
-
-    .introduction__p{
-        font-size: var(--size-2xl);
-    }
-
-    .introduction__reach-out{
-        font-size: var(--size-2xl);
-    }
-}
 

@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="styles/components/about.css">
     <link rel="stylesheet" href="styles/components/featured.css">
     <link rel="stylesheet" href="styles/components/projects.css">
+    <link rel="stylesheet" href="styles/components/contact.css">
+    <link rel="stylesheet" href="styles/components/footer.css">
+    <link rel="stylesheet" href="styles/components/header_mobile.css">
 </head>
 <body>
     <header class="header container">
@@ -39,24 +42,51 @@
                     <a href="#" class="header__resume btn">Resume</a>
                 </li>
             </ul>
-            <button class="header__bars">
+            <button class="header__bars" onclick="barsClicked()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>                          
             </button>
+        </nav>
+
+        <nav>
+            <ul class="header__mobile__menu">
+                <li>
+                    <a class="header__mobile__link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="header__mobile__link" href="#featured">Work</a>
+                </li>
+                <li>
+                    <a class="header__mobile__link" href="#contact">Contact</a>
+                </li>
+                <li class="mobile__line-seperator"></li>
+                <li>
+                    <button class="header__mobile__sun">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+                            stroke-width="1.5"  stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                        </svg>                          
+                    </button>
+                </li>
+                <li>
+                    <a href="#" class="header__mobile__resume btn">Resume</a>
+                </li>
+            </ul>
+
         </nav>
     </header>
     <main class="main container">
         <section class="introduction section">
             <img class="introduction__image" src="images/pfp.jpg" alt="Profile Picture">
             <h4 class="introduction__greeting">Hi, I'm Ramzi 👋</h4>
-            <h1 class="introduction__job">FRONT-END <br>WEB DEVELOPER.</h1>
+            <h1 class="introduction__job">FRONT-END <br>WEB DEVELOPER</h1>
             <p class="introduction__p">A passionate <strong>Frontend / Fullstack-Jamstack</strong> web developer and <strong>UI/UX</strong> enthusiast specialized in building stunning pixel-perfect interactive websites/applications.</p>
             <a href="#" class="introduction__reach-out btn">Reach Out</a>
         </section>
 
         <section class="about section">
-           <div class="about__divs">
+           <div class="about__divs" id="about">
                 <div class="about__info-div">
                     <h2 class="about__title">About</h2>
                     <p class="about__p">Hello there! I'm Ramzi, a <strong>Frontend / Fullstack-Jamstack</strong> web developer based near Montreal. I wake up in the morning, grab a cup of timmies coffee, open up my laptop and build things that live on the web all day, everyday.</p>    
@@ -78,7 +108,7 @@
            </div>
 
         </section>
-        <section class="featured section">
+        <section class="featured section" id="featured">
             <h5 class="featured__featured-project">Featured Project</h5>
             <div class="featured__title-div">
                 <h2 class="featured__title">SLAYING THE DRAGON</h2>
@@ -256,13 +286,19 @@
             </div>
 
         </section>
-        <section>
-            
-        </section>
-        <section>
-            
+
+        <section class="contact section"  id="contact">
+            <h2 class="contact__title">Get In Contact</h2>
+            <p class="contact__p">Whether you are starting a project, have business inquiries or just want to say hi, my inbox is always open so feel free to reach out and I will get 
+                back to you as soon as possible.
+            </p>
+            <a href="mailto:giannis2001.gs@gmail.com" class="contact__btn btn">Reach Out</a>
         </section>
     </main>
-   <!--  <footer></footer> -->
+    <footer class="container section footer">
+        <h6>~ GIANNIS SFAKIANAKIS ~</h6>
+    </footer>
+
+    <script src="src/mobile_header.js"></script>
 </body>
 </html>
