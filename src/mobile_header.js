@@ -4,7 +4,7 @@ let mobileLinks = document.querySelectorAll('.header__mobile__menu');
 
 let mobileNavIsVisible = false;
 
-function barsClicked(){
+bars.addEventListener('click', () => {
     mobileNavIsVisible = !mobileNavIsVisible;
 
     if(mobileNavIsVisible){
@@ -22,4 +22,5 @@ function barsClicked(){
             document.body.style.overflowY = 'auto';
         });
     });
-}
+
+});

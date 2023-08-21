@@ -73,7 +73,7 @@
 @media (min-width: 640px){
     .about__image-div{
         align-self: center;
-        max-width: 27rem;
+        max-width: 18rem;
     }
 
     .about__title{
