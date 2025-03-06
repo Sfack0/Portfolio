@@ -50,7 +50,7 @@
 .about__tech-list-element::before{
     content:'\2713';
     margin-right: 0.2rem;
-    color: rgb(0, 255, 0);;
+    color: rgb(0, 255, 1);;
 }
 
 
