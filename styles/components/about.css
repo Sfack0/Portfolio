@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 1.rem;
 }
 
 .about__p{
@@ -50,7 +50,7 @@
 .about__tech-list-element::before{
     content:'\2713';
     margin-right: 0.2rem;
-    color: rgb(0, 255, 1);;
+    color: rgb(0, 255, 0);;
 }
 
 
