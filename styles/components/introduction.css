@@ -8,7 +8,6 @@
 .introduction__image-container{
     width: var(--size-8xl);
     height:  var(--size-8xl);
-    background-color: red;
     border-radius: var(--size-8xl);
     overflow: hidden;
 }
